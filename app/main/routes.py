@@ -1,4 +1,4 @@
-from app import app, db
+from app import db
 from app.forms import AddTransactionForm
 from app.models import User, Account, Transaction
 from flask import render_template

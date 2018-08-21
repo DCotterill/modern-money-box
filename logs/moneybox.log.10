@@ -1,4 +1,4 @@
-2018-08-20 17:33:54,105 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+2018-08-20 17:38:57,865 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -31,8 +31,7 @@ Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
-2018-08-20 17:35:32,293 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:41]
-2018-08-20 17:35:35,115 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+2018-08-20 17:39:19,769 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -65,8 +64,7 @@ Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
-2018-08-20 17:38:41,579 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:41]
-2018-08-20 17:38:44,338 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+2018-08-20 17:41:20,654 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()

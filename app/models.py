@@ -4,6 +4,7 @@ from app import login
 
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+import enum
 
 
 class User(UserMixin, db.Model):
@@ -40,7 +41,7 @@ def load_user(id):
 
 class Account(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    balance = db.Column(db.Integer, default=0)
+    balance = db.Column(db.Numeric(15, 2), default=0)
     name = db.Column(db.String(140))
     created_date = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -51,12 +52,18 @@ class Account(db.Model):
         return '<Account {}>'.format(self.name)
 
 
+class TransactionType(enum.Enum):
+    CREDIT = 'C'
+    DEBIT = 'D'
+
+
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    amount = db.Column(db.Integer, default=0)
+    amount = db.Column(db.Numeric(15, 2), default=0)
+    type = db.Column(db.String(1))
     description = db.Column(db.String(140))
     created_date = db.Column(db.DateTime, default=datetime.utcnow)
     account_id = db.Column(db.Integer, db.ForeignKey('account.id'))
 
     def __repr__(self):
-        return '<Transaction {}>'.format(self.description, self.amount)
+        return '<Transaction {} {} {} {}>'.format(self.created_date, self.description, self.amount, self.type)

@@ -1,65 +1,114 @@
-2018-08-21 11:04:02,832 ERROR: Exception on /index [GET] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
+2018-08-27 17:51:19,265 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 17:51:24,389 ERROR: Exception on /main/upload [POST] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1644, in handle_http_exception
-    return handler(e)
-  File "/Users/darren/PycharmProjects/modern-money-box/app/errors/handlers.py", line 7, in not_found_error
-    return render_template('errors/404.html'), 404
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/Users/darren/PycharmProjects/modern-money-box/app/templates/errors/404.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/Users/darren/PycharmProjects/modern-money-box/app/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/Users/darren/PycharmProjects/modern-money-box/app/templates/errors/404.html", line 5, in block "content"
-    <p><a href="{{ url_for('index') }}">Back</a></p>
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
     reraise(exc_type, exc_value, tb)
   File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
     raise value
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
-2018-08-21 11:04:07,931 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:44]
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/darren/PycharmProjects/modern-money-box/app/main/routes.py", line 90, in upload_file
+    print(row[1])
+IndexError: list index out of range
+2018-08-27 17:51:49,480 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 17:51:52,217 ERROR: Exception on /main/upload [POST] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/darren/PycharmProjects/modern-money-box/app/main/routes.py", line 84, in upload_file
+    content = content.encode('utf-8')
+AttributeError: 'bytes' object has no attribute 'encode'
+2018-08-27 17:53:22,887 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 17:53:26,603 ERROR: Exception on /main/upload [POST] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/darren/PycharmProjects/modern-money-box/app/main/routes.py", line 89, in upload_file
+    print(row[0])
+IndexError: list index out of range
+2018-08-27 18:38:57,667 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 18:39:33,630 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 18:39:53,483 ERROR: Exception on /main/upload [POST] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/darren/PycharmProjects/modern-money-box/app/main/routes.py", line 93, in upload_file
+    print(row[3])
+IndexError: list index out of range
+2018-08-27 18:40:06,777 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-27 20:42:41,233 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:55:28,790 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:55:31,713 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:55:34,345 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:56:17,539 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:57:45,835 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:58:04,432 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:58:09,108 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:58:14,070 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:59:27,620 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 08:59:42,843 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 09:01:02,531 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 09:01:08,656 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 09:02:21,341 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]
+2018-08-28 09:02:33,048 ERROR: Exception on /auth/login [POST] [in /Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/darren/anaconda3/envs/heroku-webapp/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/darren/PycharmProjects/modern-money-box/app/auth/routes.py", line 20, in login
+    print ("is parent?:" + str(user.is_parent_user))
+AttributeError: 'NoneType' object has no attribute 'is_parent_user'
+2018-08-28 09:11:23,850 INFO: Moneybox startup [in /Users/darren/PycharmProjects/modern-money-box/app/__init__.py:55]

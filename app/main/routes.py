@@ -24,9 +24,10 @@ def index():
             if len(child.accounts.all()) > 0:
                 account_name = child.accounts[0].name
                 account_id = child.accounts[0].id
+                account_balance = child.accounts[0].balance
 
-            print("name:" + child.username + ",account:" + account_name, ",id"+str(account_id))
-            account_info.append({"name": child.username, "account_name": account_name, "account_id": account_id})
+            account_info.append({"name": child.username, "account_balance": account_balance,
+                                 "account_name": account_name, "account_id": account_id})
 
     else:
         account_info = []
@@ -35,8 +36,10 @@ def index():
         if len(user.accounts.all()) > 0:
             account_name = user.accounts[0].name
             account_id = user.accounts[0].id
+            account_balance = user.accounts[0].balance
 
-        account_info.append({"name": user.username, "account_name": account_name, "account_id": account_id})
+        account_info.append({"name": user.username, "account_balance": account_balance,
+                             "account_name": account_name, "account_id": account_id})
 
     return render_template('index.html', title="Home", account_info=account_info)
 

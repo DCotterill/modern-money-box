@@ -8,6 +8,7 @@
                 {% for account in account_info %}
                     <tr>
                         <td>{{ account.name }} </td>
+                        <td>{{ account.account_balance }} </td>
                         <td><a href="{{ url_for('main.transactions', account_id=account.account_id) }}">
                                 {{ account.account_name }}</a></td>
                     </tr>

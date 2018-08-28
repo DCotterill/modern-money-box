@@ -5,33 +5,44 @@
     <h1>Transactions</h1>
 
     <table>
+        <tr width="100%">
+            {% if current_user.is_parent_user %}
+                <td width="100%">
+                    <div class="row">
+                        <div class="col-md-4">
+                            {{ wtf.quick_form(form) }}
+                        </div>
+                    </div>
+                </td>
+            {% endif %}
+        </tr>
+
         <tr>
-            <td width="300px">
+            <td height="20px"/>
+        </tr>
+
+        <tr>
+            <td width="100%">
                 <table class="table table-hover">
                     {% for transaction in account.transactions %}
                         <tr>
                             <td>{{ moment(transaction.created_date).format('ddd L') }}</td>
-                            <td>{{ transaction.amount }}</td>
+
+                            <td align="right">
+                                {% if transaction.type == 'C' %}
+                                    <span style="color:red;">-{{ transaction.amount }}</span>
+                                {% else %}
+                                    {{  transaction.amount }}
+                                {% endif %}
+
+                            </td>
                             <td>{{ transaction.description }}</td>
                         </tr>
                     {% endfor %}
                 </table>
             </td>
-            <td width="50px">
-
-            </td>
-            <td width="350px" valign="top">
-                <div class="row">
-                    <div class="col-md-4">
-                        {{ wtf.quick_form(form) }}
-                    </div>
-                </div>
-            </td>
         </tr>
-
     </table>
-
     <p/>
-
 
 {% endblock %}

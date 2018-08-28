@@ -46,7 +46,8 @@ class Account(db.Model):
     created_date = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
-    transactions = db.relationship('Transaction', backref='account', lazy='dynamic')
+    transactions = db.relationship('Transaction', backref='account', lazy='dynamic',
+                                   order_by='desc(Transaction.created_date)')
 
     def __repr__(self):
         return '<Account {}>'.format(self.name)

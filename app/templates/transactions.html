@@ -29,7 +29,7 @@
                             <td>{{ moment(transaction.created_date).format('ddd L') }}</td>
 
                             <td align="right">
-                                {% if transaction.type == 'C' %}
+                                {% if transaction.type == 'D' %}
                                     <span style="color:red;">-{{ transaction.amount }}</span>
                                 {% else %}
                                     {{  transaction.amount }}

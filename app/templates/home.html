@@ -1,0 +1,29 @@
+{%  extends "base.html" %}
+
+{%  block app_content %}
+
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Welcome to Little Money!</h1>
+
+            <h4> An easy way to manage kids' savings without the need for a bank account</h4>
+
+            <ul>Add savings and transactions, just as you would with a piggy bank</ul>
+            <ul>Create child accounts so they can see their savings growing</ul>
+            <ul>Automatically add regular pocket money and interest</ul>
+
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='img/fabian-blank-78637-unsplash.jpg') }}"
+                 class="img-rounded" alt="Piggy Bank" style="width:100%">
+        </div>
+    </div>
+
+
+     <p/>
+    <p>New User? <a href="{{ url_for('auth.register') }}">Click to register a parent account</a> then create accounts for your children</p>
+
+
+        <p/>
+
+{%  endblock %}

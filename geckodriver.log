@@ -1,0 +1,215 @@
+1539926058563	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_n/xqn0dkqs1xd7m5xrn93t3vsc0000gp/T/rust_mozprofile.HBjhzhuXT67D"
+2018-10-19 16:14:21.184 plugin-container[38941:1373088] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:21.186 plugin-container[38941:1373088] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:21.186 plugin-container[38941:1373088] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:21.186 plugin-container[38941:1373088] GetInputSourceEnabledPrefs user pref content can not open
+2018-10-19 16:14:21.620 plugin-container[38942:1373121] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x733f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:21.621 plugin-container[38942:1373121] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:21.621 plugin-container[38942:1373121] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:21.621 plugin-container[38942:1373121] GetInputSourceEnabledPrefs user pref content can not open
+1539926062133	Marionette	INFO	Listening on port 65233
+1539926062194	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539926062277	Marionette	DEBUG	[4294967297] Frame script loaded
+2018-10-19 16:14:22.305 plugin-container[38943:1373212] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x953f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:22.307 plugin-container[38943:1373212] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:22.307 plugin-container[38943:1373212] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:22.307 plugin-container[38943:1373212] GetInputSourceEnabledPrefs user pref content can not open
+1539926062317	Marionette	DEBUG	[4294967297] Frame script registered
+1539926062351	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539926062412	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1539926062837	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/
+1539926062845	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/
+1539926062917	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for http://localhost:5000/
+1539926063006	Marionette	DEBUG	[4294967297] Received DOM event pagehide for http://localhost:5000/
+1539926063009	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
+1539926063196	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
+1539926063209	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login
+1539926063279	Marionette	INFO	Stopped listening on port 65233
+1539926063315	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: TypeError: setting getter-only property "_currentSearchHostname" (resource://activity-stream/lib/TopSitesFeed.jsm:86:5) JS Stack trace: uninit@TopSitesFeed.jsm:86:5
+onAction@TopSitesFeed.jsm:707:9
+_middleware/</<@Store.jsm:51:11
+Store/this[method]@Store.jsm:29:55
+uninit@Store.jsm:170:7
+uninit@ActivityStream.jsm:363:5
+uninit@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:86:5
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:194:3
+callBootstrapMethod@XPIProvider.jsm:1588:20
+_shutdown@XPIProvider.jsm:1724:12
+flushAllWindowsAsync@SessionStore.jsm:1697:7
+ssi_onQuitApplicationGranted/<@SessionStore.jsm:1624:27
+trigger@AsyncShutdown.jsm:710:23
+_wait@AsyncShutdown.jsm:857:7
+wait@AsyncShutdown.jsm:841:28
+observe@AsyncShutdown.jsm:524:17
+GeckoDriver.prototype.quit@driver.js:3319:3
+despatch@server.js:297:20
+execute@server.js:271:11
+onPacket/<@server.js:246:15
+onPacket@server.js:245:8
+_onJSONObjectReady/<@transport.js:500:9
+1539926069850	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_n/xqn0dkqs1xd7m5xrn93t3vsc0000gp/T/rust_mozprofile.atyVrG0SVNte"
+2018-10-19 16:14:31.826 plugin-container[38954:1373465] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7247, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:31.827 plugin-container[38954:1373465] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:31.828 plugin-container[38954:1373465] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:31.828 plugin-container[38954:1373465] GetInputSourceEnabledPrefs user pref content can not open
+2018-10-19 16:14:32.214 plugin-container[38955:1373497] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7307, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:32.216 plugin-container[38955:1373497] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:32.216 plugin-container[38955:1373497] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:32.216 plugin-container[38955:1373497] GetInputSourceEnabledPrefs user pref content can not open
+1539926072565	Marionette	INFO	Listening on port 65305
+1539926072628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539926072692	Marionette	DEBUG	[4294967297] Frame script loaded
+1539926072700	Marionette	DEBUG	[4294967297] Frame script registered
+1539926072722	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539926072745	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1539926073245	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/
+1539926073253	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/
+2018-10-19 16:14:33.308 plugin-container[38957:1373614] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:33.310 plugin-container[38957:1373614] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:33.310 plugin-container[38957:1373614] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:33.310 plugin-container[38957:1373614] GetInputSourceEnabledPrefs user pref content can not open
+1539926073330	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for http://localhost:5000/
+1539926073352	Marionette	DEBUG	[4294967297] Received DOM event pagehide for http://localhost:5000/
+1539926073354	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
+1539926073517	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
+1539926073523	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login
+1539926073585	Marionette	INFO	Stopped listening on port 65305
+1539926073616	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: TypeError: setting getter-only property "_currentSearchHostname" (resource://activity-stream/lib/TopSitesFeed.jsm:86:5) JS Stack trace: uninit@TopSitesFeed.jsm:86:5
+onAction@TopSitesFeed.jsm:707:9
+_middleware/</<@Store.jsm:51:11
+Store/this[method]@Store.jsm:29:55
+uninit@Store.jsm:170:7
+uninit@ActivityStream.jsm:363:5
+uninit@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:86:5
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:194:3
+callBootstrapMethod@XPIProvider.jsm:1588:20
+_shutdown@XPIProvider.jsm:1724:12
+flushAllWindowsAsync@SessionStore.jsm:1697:7
+ssi_onQuitApplicationGranted/<@SessionStore.jsm:1624:27
+trigger@AsyncShutdown.jsm:710:23
+_wait@AsyncShutdown.jsm:857:7
+wait@AsyncShutdown.jsm:841:28
+observe@AsyncShutdown.jsm:524:17
+GeckoDriver.prototype.quit@driver.js:3319:3
+despatch@server.js:297:20
+execute@server.js:271:11
+onPacket/<@server.js:246:15
+onPacket@server.js:245:8
+_onJSONObjectReady/<@transport.js:500:9
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.
+1539926085640	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_n/xqn0dkqs1xd7m5xrn93t3vsc0000gp/T/rust_mozprofile.NsH7iRBaUHiQ"
+2018-10-19 16:14:47.628 plugin-container[38971:1373893] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x773f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:47.630 plugin-container[38971:1373893] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:47.630 plugin-container[38971:1373893] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:47.630 plugin-container[38971:1373893] GetInputSourceEnabledPrefs user pref content can not open
+2018-10-19 16:14:48.028 plugin-container[38972:1373922] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:48.030 plugin-container[38972:1373922] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:48.030 plugin-container[38972:1373922] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:48.030 plugin-container[38972:1373922] GetInputSourceEnabledPrefs user pref content can not open
+1539926088379	Marionette	INFO	Listening on port 65359
+1539926088415	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539926088485	Marionette	DEBUG	[4294967297] Frame script loaded
+1539926088512	Marionette	DEBUG	[4294967297] Frame script registered
+1539926088535	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539926088653	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+2018-10-19 16:14:48.999 plugin-container[38973:1374030] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8943, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:14:49.000 plugin-container[38973:1374030] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:14:49.000 plugin-container[38973:1374030] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:14:49.000 plugin-container[38973:1374030] GetInputSourceEnabledPrefs user pref content can not open
+1539926089163	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/
+1539926089172	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/
+1539926089236	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for http://localhost:5000/
+1539926089320	Marionette	DEBUG	[4294967297] Received DOM event pagehide for http://localhost:5000/
+1539926089322	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
+1539926089488	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
+1539926089497	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login
+1539926089560	Marionette	INFO	Stopped listening on port 65359
+1539926089592	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: TypeError: setting getter-only property "_currentSearchHostname" (resource://activity-stream/lib/TopSitesFeed.jsm:86:5) JS Stack trace: uninit@TopSitesFeed.jsm:86:5
+onAction@TopSitesFeed.jsm:707:9
+_middleware/</<@Store.jsm:51:11
+Store/this[method]@Store.jsm:29:55
+uninit@Store.jsm:170:7
+uninit@ActivityStream.jsm:363:5
+uninit@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:86:5
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Applications/Firefox.app/Contents/Resources/browser/features/activity-stream@bootstrap.js:194:3
+callBootstrapMethod@XPIProvider.jsm:1588:20
+_shutdown@XPIProvider.jsm:1724:12
+flushAllWindowsAsync@SessionStore.jsm:1697:7
+ssi_onQuitApplicationGranted/<@SessionStore.jsm:1624:27
+trigger@AsyncShutdown.jsm:710:23
+_wait@AsyncShutdown.jsm:857:7
+wait@AsyncShutdown.jsm:841:28
+observe@AsyncShutdown.jsm:524:17
+GeckoDriver.prototype.quit@driver.js:3319:3
+despatch@server.js:297:20
+execute@server.js:271:11
+onPacket/<@server.js:246:15
+onPacket@server.js:245:8
+_onJSONObjectReady/<@transport.js:500:9
+1539926107029	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_n/xqn0dkqs1xd7m5xrn93t3vsc0000gp/T/rust_mozprofile.SLJQ2Y8i3nN8"
+2018-10-19 16:15:08.957 plugin-container[38988:1374426] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7943, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:08.959 plugin-container[38988:1374426] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:08.959 plugin-container[38988:1374426] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:08.959 plugin-container[38988:1374426] GetInputSourceEnabledPrefs user pref content can not open
+2018-10-19 16:15:09.339 plugin-container[38989:1374449] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:09.341 plugin-container[38989:1374449] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:09.341 plugin-container[38989:1374449] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:09.341 plugin-container[38989:1374449] GetInputSourceEnabledPrefs user pref content can not open
+1539926109703	Marionette	INFO	Listening on port 65415
+1539926109726	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539926109794	Marionette	DEBUG	[4294967297] Frame script loaded
+1539926109797	Marionette	DEBUG	[4294967297] Frame script registered
+1539926109816	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539926109877	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1539926110351	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/
+1539926110358	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/
+1539926110435	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for http://localhost:5000/
+2018-10-19 16:15:10.486 plugin-container[38990:1374557] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:10.487 plugin-container[38990:1374557] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:10.487 plugin-container[38990:1374557] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:10.487 plugin-container[38990:1374557] GetInputSourceEnabledPrefs user pref content can not open
+1539926110540	Marionette	DEBUG	[4294967297] Received DOM event pagehide for http://localhost:5000/
+1539926110543	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
+1539926110702	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
+1539926110708	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login
+1539926128522	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/_n/xqn0dkqs1xd7m5xrn93t3vsc0000gp/T/rust_mozprofile.V8d8R9X3C68n"
+2018-10-19 16:15:30.640 plugin-container[39005:1374929] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8903, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:30.641 plugin-container[39005:1374929] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:30.641 plugin-container[39005:1374929] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:30.642 plugin-container[39005:1374929] GetInputSourceEnabledPrefs user pref content can not open
+2018-10-19 16:15:31.018 plugin-container[39006:1374951] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7143, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:31.019 plugin-container[39006:1374951] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:31.019 plugin-container[39006:1374951] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:31.019 plugin-container[39006:1374951] GetInputSourceEnabledPrefs user pref content can not open
+1539926131322	Marionette	INFO	Listening on port 65480
+1539926131394	Marionette	WARN	TLS certificate errors will be ignored for this session
+1539926131463	Marionette	DEBUG	[4294967297] Frame script loaded
+1539926131469	Marionette	DEBUG	[4294967297] Frame script registered
+1539926131494	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1539926131646	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+2018-10-19 16:15:32.046 plugin-container[39007:1375066] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-19 16:15:32.048 plugin-container[39007:1375066] GetInputSourceEnabledPrefs user file path = /Users/darren/Library/Preferences/com.apple.HIToolbox.plist
+2018-10-19 16:15:32.048 plugin-container[39007:1375066] GetInputSourceEnabledPrefs effective user id path = 502
+2018-10-19 16:15:32.048 plugin-container[39007:1375066] GetInputSourceEnabledPrefs user pref content can not open
+1539926132131	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/
+1539926132145	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/
+1539926132210	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for http://localhost:5000/
+1539926132294	Marionette	DEBUG	[4294967297] Received DOM event pagehide for http://localhost:5000/
+1539926132296	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
+1539926132456	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
+1539926132464	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login

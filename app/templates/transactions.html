@@ -4,45 +4,41 @@
 {% block app_content %}
     <h1>Transactions: {{ account.owner.username }}</h1>
 
-    <table>
-        <tr width="100%">
-            {% if current_user.is_parent_user %}
-                <td width="100%">
-                    <div class="row">
-                        <div class="col-md-4">
-                            {{ wtf.quick_form(form) }}
-                        </div>
-                    </div>
-                </td>
-            {% endif %}
-        </tr>
+        {% if current_user.is_parent_user %}
+            <div class="row">
+                <div class="col-md-4">
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
+        {% endif %}
+        <p/><p/>
+        <table class="table table-bordered table-condensed table-striped">
+            <thead>
+              <tr>
+                  <th class="col-md-1">Date</th>
+                  <th class="col-md-1">Amount</th>
+                  <th class="col-md-6">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for transaction in account.transactions %}
+                <tr>
+                    <td>{{ moment(transaction.created_date).format('ddd L') }}</td>
 
-        <tr>
-            <td height="20px"/>
-        </tr>
+                    <td align="right">
+                        {% if transaction.type == 'D' %}
+                            <span style="color:red;">-{{ transaction.amount }}</span>
+                        {% else %}
+                            {{  transaction.amount }}
+                        {% endif %}
 
-        <tr>
-            <td width="100%">
-                <table class="table table-hover">
-                    {% for transaction in account.transactions %}
-                        <tr>
-                            <td>{{ moment(transaction.created_date).format('ddd L') }}</td>
+                    </td>
 
-                            <td align="right">
-                                {% if transaction.type == 'D' %}
-                                    <span style="color:red;">-{{ transaction.amount }}</span>
-                                {% else %}
-                                    {{  transaction.amount }}
-                                {% endif %}
-
-                            </td>
-                            <td>{{ transaction.description }}</td>
-                        </tr>
-                    {% endfor %}
-                </table>
-            </td>
-        </tr>
-    </table>
+                    <td>{{ transaction.description }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
     <p/>
 
 {% endblock %}

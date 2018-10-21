@@ -10,6 +10,10 @@ import decimal
 
 
 @bp.route('/')
+def home():
+    return render_template('home.html', title="Home")
+
+
 @bp.route('/index')
 @login_required
 def index():

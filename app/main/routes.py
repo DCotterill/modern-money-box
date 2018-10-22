@@ -1,5 +1,5 @@
 from app import db
-from app.forms import AddTransactionForm
+from app.forms import AddTransactionForm, UploadForm
 from app.models import User, Account, Transaction, load_user, TransactionType
 from flask import render_template, request, flash, redirect, url_for
 from flask_login import current_user, login_required
@@ -85,12 +85,33 @@ def utf_8_encoder(unicode_csv_data):
 @bp.route('/upload', methods=['GET', 'POST'])
 @login_required
 def upload_file():
+
+    form = UploadForm()
+
+    if request.method == 'GET':
+        form.user_id.choices = []
+        user = load_user(current_user.id)
+        if user.is_parent_user:
+            children = User.query.filter_by(parent_id=current_user.id).all()
+
+            for child in children:
+                account_name = "No account"
+                account_id = 0
+                if len(child.accounts.all()) > 0:
+                    account_name = child.accounts[0].name
+                    account_id = child.accounts[0].id
+                    account_balance = child.accounts[0].balance
+
+                    form.user_id.choices.append((child.id, child.username))
+
     if request.method == 'POST':
+
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
             return redirect(request.url)
         file = request.files['file']
+
         # if user does not select file, browser also
         # submit an empty part without filename
         if file.filename == '':
@@ -102,13 +123,13 @@ def upload_file():
             print(content)
             csv_reader = csv.reader(StringIO(content), delimiter=',')
 
-            user = load_user(current_user.id)
+            user = load_user(form.user_id.data)
             current_account = user.accounts[0]
+            print(form.user_id.data)
+            print(user.username)
+            print(current_account.balance)
 
             for row in csv_reader:
-
-                balance = 0
-
                 transaction_date = row[0]
                 description = row[1]
                 credit = row[2]
@@ -132,4 +153,4 @@ def upload_file():
             db.session.commit()
 
             return redirect(url_for('main.index'))
-    return render_template('upload_transactions.html')
+    return render_template('upload_transactions.html', form=form)

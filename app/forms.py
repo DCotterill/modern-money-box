@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, DecimalField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, DecimalField, SelectField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 
 from app.models import User
@@ -45,9 +45,11 @@ class ChildRegistrationForm(FlaskForm):
 
 
 class AddTransactionForm(FlaskForm):
-    # account_id = HiddenField('account_id', validators=[DataRequired()])
     amount = DecimalField('Amount', validators=[DataRequired()])
     description = StringField('Description', validators=[DataRequired()])
     credit = SubmitField('Credit')
     debit = SubmitField('Debit')
 
+
+class UploadForm(FlaskForm):
+    user_id = SelectField('Account', coerce=int)

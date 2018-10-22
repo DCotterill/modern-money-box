@@ -1,12 +1,26 @@
 {% extends "base.html" %}
-{% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-<h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-    </form>
+    <h1>Upload Transactions</h1>
 
+    {% if current_user.is_parent_user %}
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+                {{ form.user_id.label }}
+                {{ form.user_id }}
+        </div>
+
+
+
+        <div class="form-group">
+        <span class="btn btn-default btn-file">
+            <input type="file" name="file" placeholder='Choose a file...' />
+        </span>
+        </div>
+        <div class="form-group">
+	    	<button type="submit" value="Upload" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
 
 {% endblock %}

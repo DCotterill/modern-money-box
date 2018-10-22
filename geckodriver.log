@@ -213,3 +213,5 @@ See /usr/include/servers/bootstrap_defs.h for the error codes.
 1539926132296	Marionette	DEBUG	[4294967297] Received DOM event unload for http://localhost:5000/
 1539926132456	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://localhost:5000/auth/login
 1539926132464	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://localhost:5000/auth/login
+1540164586372	Marionette	INFO	Stopped listening on port 65480
+1540164588733	Marionette	INFO	Stopped listening on port 65415
